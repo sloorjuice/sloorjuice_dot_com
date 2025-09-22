@@ -20,34 +20,94 @@ export default function Home() {
 		  </p>		  
 		</div>
 
-		<div className="text-center border-2 border-black p-5">
-		  <p> Image Here </p>
+		<div className="text-center border-2 border-black px-58 py-6">
+		  <p> Featured Project </p>
 		</div>
 		
-		<div className="text-center flex gap-2">
-			<div className="text-center border-2 border-black p-5">
-				<p> Image Here </p>
-			</div>
-			<div className="text-center border-2 border-black p-5">
-				<div className="gap-0 pb-4">
-					<p className="font-bold"> Social Medias: </p>
-					<ul className="flex flex-col">
-						<p>Twitter</p>
-						<p>linkdin</p>
-						<p>Instagram</p>
-					</ul>
+		<div className="text-center grid grid-cols-2 gap-2">
+			<div className="text-center border-2 border-black py-3 px-6">
+				<h1 className="pb-4 text-2xl font-bold">Skills</h1>
+				<div className="flex">
+					<div className="gap-0 pb-4">
+						<p className="font-bold"> Social Medias: </p>
+						<ul className="flex flex-col">
+							<p>Twitter</p>
+							<p>linkdin</p>
+							<p>Instagram</p>
+						</ul>
+					</div>
+					<div className="gap-0 pb-4">
+						<p className="font-bold">  Lists: </p>
+						<ul className="flex flex-col">
+							<p>IGN Playlist</p>
+							<p>My Anime List</p>
+							<p>LetterBoxd</p>
+						</ul>
+					</div>
 				</div>
-				<div className="gap-0 pb-4">
-					<p className="font-bold">  Lists: </p>
-					<ul className="flex flex-col">
-						<p>IGN Playlist</p>
-						<p>My Anime List</p>
-						<p>LetterBoxd</p>
-					</ul>
+			</div>
+			<div className="text-center border-2 border-black py-3 px-6">
+				<h1 className="pb-4 text-2xl font-bold">Contacts & Socials</h1>
+				<div className="flex">
+					<div className="gap-0 pb-4">
+						<p className="font-bold"> Social Medias: </p>
+						<ul className="flex flex-col">
+							<p>Twitter</p>
+							<p>linkdin</p>
+							<p>Instagram</p>
+						</ul>
+					</div>
+					<div className="gap-0 pb-4">
+						<p className="font-bold">  Lists: </p>
+						<ul className="flex flex-col">
+							<p>IGN Playlist</p>
+							<p>My Anime List</p>
+							<p>LetterBoxd</p>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div className="text-center border-2 border-black p-5">
-				<p> Image Here </p>
+			<div className="text-center border-2 border-black py-3 px-6">
+				<h1 className="pb-4 text-2xl font-bold">Favorites</h1>
+				<div className="flex">
+					<div className="gap-0 pb-4">
+						<p className="font-bold"> Social Medias: </p>
+						<ul className="flex flex-col">
+							<p>Twitter</p>
+							<p>linkdin</p>
+							<p>Instagram</p>
+						</ul>
+					</div>
+					<div className="gap-0 pb-4">
+						<p className="font-bold">  Lists: </p>
+						<ul className="flex flex-col">
+							<p>IGN Playlist</p>
+							<p>My Anime List</p>
+							<p>LetterBoxd</p>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div className="text-center border-2 border-black py-3 px-6">
+				<h1 className="pb-4 text-2xl font-bold">Hobbies</h1>
+				<div className="flex">
+					<div className="gap-0 pb-4">
+						<p className="font-bold"> Social Medias: </p>
+						<ul className="flex flex-col">
+							<p>Twitter</p>
+							<p>linkdin</p>
+							<p>Instagram</p>
+						</ul>
+					</div>
+					<div className="gap-0 pb-4">
+						<p className="font-bold">  Lists: </p>
+						<ul className="flex flex-col">
+							<p>IGN Playlist</p>
+							<p>My Anime List</p>
+							<p>LetterBoxd</p>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	  </main>
