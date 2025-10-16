@@ -101,22 +101,26 @@ export default function Home() {
                     </div>
                     <div className="text-center border-2 border-black py-3 px-6">
                         <h1 className="pb-4 text-2xl font-bold underline">Favorites</h1>
-                        <div className="flex items-start justify-center gap-8">
+                        <div className="flex items-start justify-center gap-16">
                             <div className="gap-0 pb-4">
-                                <p className="font-bold"> Social Medias: </p>
-                                <ul className="flex flex-col space-y-1">
-                                    <p>Twitter</p>
-                                    <p>linkdin</p>
-                                    <p>Instagram</p>
-                                </ul>
+                                <p className="font-bold"> Game: </p>
+                                <div className="flex flex-col space-y-1">
+                                    <p>Terraria</p>
+                                </div>
+                                <p className="font-bold"> TV Show: </p>
+                                <div className="flex flex-col space-y-1">
+                                    <p>Better Caul Saul</p>
+                                </div>
                             </div>
                             <div className="gap-0 pb-4">
-                                <p className="font-bold">  Lists: </p>
-                                <ul className="flex flex-col space-y-1">
-                                    <p>IGN Playlist</p>
-                                    <p>My Anime List</p>
-                                    <p>LetterBoxd</p>
-                                </ul>
+                                <p className="font-bold"> Cartoon: </p>
+                                <div className="flex flex-col space-y-1">
+                                    <p>Regular Show</p>
+                                </div>
+                                <p className="font-bold"> Movie: </p>
+                                <div className="flex flex-col space-y-1">
+                                    <p>Mid90&apos;s</p>
+                                </div>
                             </div>
                         </div>
                     </div>
