@@ -12,7 +12,7 @@ export default function Home() {
         </div>
 
         <div className="text-center border-2 border-black p-5">
-          <p> Image Here </p>
+          <p> WEBSITE WORK-IN-PROGRESS </p>
         </div>
 
       </main>
