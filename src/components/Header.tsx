@@ -8,7 +8,9 @@ export default function Header() {
       <h2 className="text-md font-light m-1 underline">Everything Sloorjuice.</h2>
       <nav className="mt-2 flex gap-4">
         <Link href="/" className="hover:underline">Home</Link>
+        <Link href="/portfolio" className="hover:underline">Portfolio</Link>
         <Link href="/about" className="hover:underline">About</Link>
+        <Link href="/blog" className="hover:underline">Blog</Link>
         {/* <Link href="/projects" className="hover:underline">Projects</Link> */}
         {/* <Link href="/jukebox" className="hover:underline">Jukebox</Link> */}
       </nav>
