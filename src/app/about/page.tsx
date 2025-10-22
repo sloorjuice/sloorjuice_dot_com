@@ -47,29 +47,18 @@ export default function About() {
                     
                     <div className="text-center grid grid-cols-2 gap-2">
                         <div className="text-center border-2 border-black py-3 px-6">
-                            <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
-                            <div className="flex items-center justify-center gap-8">
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>TypeScript</p>
-                                        <p>Python</p>
-                                        <p>Next.js</p>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Expo</p>
-                                        <p>Networking </p> 
-                                        <p>CyberSecurity</p>
-                                    </ul>
-                                </div>
+                            <h1 className="pb-1 text-2xl font-bold underline">Contacts & Socials</h1>
+                            <div className="pb-1 flex justify-center gap-6">
+                                <a href="mailto:antant8085@gmail.com">
+                                    <h1 className="pb-2 text-sm font-bold underline">antant8085@gmail.com</h1>
+                                </a>
+                                <a href="Tel: +1-814-431-2013">
+                                    <h1 className="pb-2 text-sm font-bold underline">(814) 431-2013</h1>
+                                </a>
                             </div>
-                        </div>
-                        <div className="text-center border-2 border-black py-3 px-6">
-                            <h1 className="pb-4 text-2xl font-bold underline">Contacts & Socials</h1>
                             <div className="flex items-center justify-center gap-8">
                                 <div>
-                                    <p className="font-bold mb-2"> Social Medias: </p>
+                                    <p className="font-bold"> Social Medias: </p>
                                     <ul className="flex flex-col space-y-2">
                                         <li>
                                             <a href="https://x.com/sloorjuice" target="_blank" rel="noopener noreferrer" className="hover:underline">Twitter</a>
@@ -83,7 +72,7 @@ export default function About() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <p className="font-bold mb-2">  Lists: </p>
+                                    <p className="font-bold">  Lists: </p>
                                     <ul className="flex flex-col space-y-2">
                                         <li>
                                             <a href="https://www.ign.com/playlist/sloorjuice" target="_blank" rel="noopener noreferrer" className="hover:underline">IGN Playlist</a>
@@ -94,6 +83,49 @@ export default function About() {
                                         <li>
                                             <a href="https://letterboxd.com/sloorjuice/" target="_blank" rel="noopener noreferrer" className="hover:underline">LetterBoxd</a>
                                         </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center border-2 border-black py-3 px-6">
+                            <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
+                            <div className="flex items-center justify-center gap-8">
+                                {/*Make skills clickable to reveal a modal about how I can utilize this skill and some projects that show it off.*/}
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Python</p>
+                                        <p>Typescript</p>
+                                        <p>Next.js</p>
+                                        <p>Expo</p>
+                                        <p>API's</p>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Self-Hosting</p>
+                                        <p>Networking </p> 
+                                        <p>CyberSecurity</p>
+                                        <p>Linux</p>
+                                        <p>Git</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center border-2 border-black py-3 px-8">
+                            <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
+                            <div className="flex items-center justify-center gap-8">
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Skateboarding</p>
+                                        <p>Gaming</p>
+                                        <p>Cartoons</p>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Software Development</p>
+                                        <p>Home Labbing</p>
+                                        <p>Photography</p>
                                     </ul>
                                 </div>
                             </div>
@@ -120,25 +152,6 @@ export default function About() {
                                     <div className="flex flex-col space-y-2">
                                         <p>Mid90&apos;s</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-center border-2 border-black py-3 px-8">
-                            <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
-                            <div className="flex items-center justify-center gap-8">
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Skateboarding</p>
-                                        <p>Gaming</p>
-                                        <p>Cartoons</p>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Software Development</p>
-                                        <p>Home Labbing</p>
-                                        <p>Photography</p>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
