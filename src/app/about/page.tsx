@@ -97,7 +97,7 @@ export default function About() {
                                         <p>Typescript</p>
                                         <p>Next.js</p>
                                         <p>Expo</p>
-                                        <p>API's</p>
+                                        <p>API&apos;s</p>
                                     </ul>
                                 </div>
                                 <div>
