@@ -49,16 +49,16 @@ export default function About() {
                 <div className="text-center grid grid-cols-2 gap-2">
                     <div className="text-center border-2 border-black py-3 px-6">
                         <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
-                        <div className="flex items-start justify-center gap-8">
-                            <div className="gap-0 pb-4">
-                                <ul className="flex flex-col space-y-1">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <ul className="flex flex-col space-y-2">
                                     <p>TypeScript</p>
                                     <p>Python</p>
                                     <p>Next.js</p>
                                 </ul>
                             </div>
-                            <div className="gap-0 pb-4">
-                                <ul className="flex flex-col space-y-1">
+                            <div>
+                                <ul className="flex flex-col space-y-2">
                                     <p>Expo</p>
                                     <p>Networking </p> 
                                     <p>CyberSecurity</p>
@@ -68,10 +68,10 @@ export default function About() {
                     </div>
                     <div className="text-center border-2 border-black py-3 px-6">
                         <h1 className="pb-4 text-2xl font-bold underline">Contacts & Socials</h1>
-                        <div className="flex items-start justify-center gap-8">
-                            <div className="gap-0 pb-4">
-                                <p className="font-bold"> Social Medias: </p>
-                                <ul className="flex flex-col space-y-1">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <p className="font-bold mb-2"> Social Medias: </p>
+                                <ul className="flex flex-col space-y-2">
                                     <li>
                                         <a href="https://x.com/sloorjuice" target="_blank" rel="noopener noreferrer" className="hover:underline">Twitter</a>
                                     </li>
@@ -83,9 +83,9 @@ export default function About() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="gap-0 pb-4">
-                                <p className="font-bold">  Lists: </p>
-                                <ul className="flex flex-col space-y-1">
+                            <div>
+                                <p className="font-bold mb-2">  Lists: </p>
+                                <ul className="flex flex-col space-y-2">
                                     <li>
                                         <a href="https://www.ign.com/playlist/sloorjuice" target="_blank" rel="noopener noreferrer" className="hover:underline">IGN Playlist</a>
                                     </li>
@@ -101,24 +101,24 @@ export default function About() {
                     </div>
                     <div className="text-center border-2 border-black py-3 px-6">
                         <h1 className="pb-4 text-2xl font-bold underline">Favorites</h1>
-                        <div className="flex items-start justify-center gap-16">
-                            <div className="gap-0 pb-4">
+                        <div className="flex items-center justify-center gap-16">
+                            <div>
                                 <p className="font-bold"> Game: </p>
-                                <div className="flex flex-col space-y-1">
+                                <div className="flex flex-col space-y-2 mb-4">
                                     <p>Terraria</p>
                                 </div>
                                 <p className="font-bold"> TV Show: </p>
-                                <div className="flex flex-col space-y-1">
+                                <div className="flex flex-col space-y-2">
                                     <p>Better Caul Saul</p>
                                 </div>
                             </div>
-                            <div className="gap-0 pb-4">
+                            <div>
                                 <p className="font-bold"> Cartoon: </p>
-                                <div className="flex flex-col space-y-1">
+                                <div className="flex flex-col space-y-2 mb-4">
                                     <p>Regular Show</p>
                                 </div>
                                 <p className="font-bold"> Movie: </p>
-                                <div className="flex flex-col space-y-1">
+                                <div className="flex flex-col space-y-2">
                                     <p>Mid90&apos;s</p>
                                 </div>
                             </div>
@@ -126,16 +126,16 @@ export default function About() {
                     </div>
                     <div className="text-center border-2 border-black py-3 px-8">
                         <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
-                        <div className="flex items-start justify-center gap-8">
-                            <div className="gap-0 pb-4">
-                                <ul className="flex flex-col space-y-1">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <ul className="flex flex-col space-y-2">
                                     <p>Skateboarding</p>
                                     <p>Gaming</p>
                                     <p>Cartoons</p>
                                 </ul>
                             </div>
-                            <div className="gap-0 pb-4">
-                                <ul className="flex flex-col space-y-1">
+                            <div>
+                                <ul className="flex flex-col space-y-2">
                                     <p>Software Development</p>
                                     <p>Home Labbing</p>
                                     <p>Photography</p>
