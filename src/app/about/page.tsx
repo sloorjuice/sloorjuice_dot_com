@@ -1,8 +1,18 @@
 import Header from "@/components/Header";
 import FeaturedProjectCard from "@/components/FeaturedProjectCard";
 import Image from "next/image";
+import fs from 'fs';
+import matter from 'gray-matter';
+import type { Project } from "@/components/FeaturedProjectCard"; // Import the type
 
 export default function About() {
+  const filePath = 'src/database/projects/jukebox.md';
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const { data } = matter(fileContent);
+
+  // Cast data to Project type
+  const project = data as Project;
+
   return (
 	<>
 	    <Header />
@@ -42,10 +52,12 @@ export default function About() {
                 </div>
 
                 {/* Main content */}
-                <div className="flex-1">
-                    <FeaturedProjectCard/>
-                    
-                    <div className="text-center grid grid-cols-2 gap-2">
+                <div className="flex-1 flex flex-col gap-2">
+                    <div className="justify-center">
+                        <FeaturedProjectCard project={project}/>
+                    </div>
+
+                    <div className="text-center grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="text-center border-2 border-black py-3 px-6">
                             <h1 className="pb-1 text-2xl font-bold underline">Contacts & Socials</h1>
                             <div className="pb-1 flex justify-center gap-6">
