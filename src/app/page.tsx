@@ -36,7 +36,7 @@ export default async function Home() {
     { src: "/me_run.gif", alt: "Pixel art 3", title: "Celeste inspired Character" },
     { src: "/orb.gif", alt: "Pixel art 3", title: "Cool Glowing Orb" },
     { src: "/yellowguy_walk.gif", alt: "Pixel art 3", title: "Cool lil' Slug Guy" },
-    { src: "/CelestedInspriedBackground.png", alt: "Pixel art 2", title: "Landscape" },
+    { src: "/CelestedInspriedBackground.png", alt: "Pixel art 2", title: "SPOOKY SCARY" },
     // Add more images here
   ];
 
