@@ -12,5 +12,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Make update.sh executable
+        run: chmod +x ./update.sh
+
       - name: Run update script
         run: ./update.sh
