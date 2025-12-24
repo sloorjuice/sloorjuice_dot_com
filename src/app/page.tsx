@@ -1,14 +1,42 @@
 import Header from "@/components/Header";
 import ImageGallery from "@/components/ImageGallery";
 
-export default function Home() {
+type BlogPost = {
+  id: number;
+  title: { rendered: string };
+  excerpt: { rendered: string };
+  link: string;
+  date: string;
+};
+
+async function getRecentPosts(): Promise<BlogPost[]> {
+  try {
+    const response = await fetch(
+      'https://theroyalscode.com/students/a_reynolds/wp-json/wp/v2/posts?per_page=3&_embed',
+      { next: { revalidate: 3600 } } // Cache for 1 hour
+    );
+    
+    if (!response.ok) {
+      return [];
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching blog posts:', error);
+    return [];
+  }
+}
+
+export default async function Home() {
+  const recentPosts = await getRecentPosts();
+  
   const pixelArt = [
     { src: "/alien.gif", alt: "Alien Guy", title: "Cool Alien Character" },
-    { src: "/CelestedInspriedBackground.png", alt: "Pixel art 2", title: "Landscape" },
     { src: "/me_idle.gif", alt: "Celeste Inspired Sprite", title: "Celeste inspired Character"},
     { src: "/me_run.gif", alt: "Pixel art 3", title: "Celeste inspired Character" },
     { src: "/orb.gif", alt: "Pixel art 3", title: "Cool Glowing Orb" },
     { src: "/yellowguy_walk.gif", alt: "Pixel art 3", title: "Cool lil' Slug Guy" },
+    { src: "/CelestedInspriedBackground.png", alt: "Pixel art 2", title: "Landscape" },
     // Add more images here
   ];
 
@@ -26,10 +54,43 @@ export default function Home() {
 
         <div className="text-center p-5 pb-0">
           <h1 className="text-2xl sm:text-3xl font-bold pt-0"> Recent Blogs</h1>
-          <hr className="w-16 mx-auto mt-2 border-t-2 border-black dark:border-white" /> {/*separator */}
+          <hr className="w-16 mx-auto mt-2 border-t-2 border-black dark:border-white" />
         </div>
-        <div className="text-center border-2 border-black p-5">
-          <p> WEBSITE WORK-IN-PROGRESS </p>
+        
+        <div className="w-full max-w-4xl px-4">
+          {recentPosts.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {recentPosts.map((post) => (
+                <a
+                  key={post.id}
+                  href={post.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-black dark:border-white rounded-lg p-4 bg-purple-200 dark:bg-purple-900 hover:bg-purple-300 dark:hover:bg-purple-800 transition-colors"
+                >
+                  <h3 
+                    className="font-bold text-lg mb-2"
+                    dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                  />
+                  <div 
+                    className="text-sm line-clamp-3"
+                    dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+                  />
+                  <p className="text-xs mt-2 text-gray-600 dark:text-gray-300">
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center border-2 border-black dark:border-white p-5 bg-purple-100 dark:bg-purple-900">
+              <p>No blog posts available at the moment.</p>
+            </div>
+          )}
         </div>
 
 

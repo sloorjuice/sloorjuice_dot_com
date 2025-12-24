@@ -8,8 +8,9 @@ export default function Header() {
       <h2 className="text-md underline">Everything Sloorjuice.</h2>
       <nav className="mt-2 flex gap-4">
         <Link href="/" className="hover:underline text-lg">Home</Link>
+                <Link href="/about" className="hover:underline text-lg">About</Link>
         <Link href="/portfolio" className="hover:underline text-lg">Portfolio</Link>
-        <Link href="/about" className="hover:underline text-lg">About</Link>
+        <a href="https://sloorjuice.itch.io" target="_blank" rel="noopener noreferrer" className="hover:underline text-lg">Games</a>
         <a href="https://theroyalscode.com/students/a_reynolds/" target="_blank" rel="noopener noreferrer" className="hover:underline text-lg">Blog</a>
         {/* <Link href="/projects" className="hover:underline">Projects</Link> */}
         {/* <Link href="/jukebox" className="hover:underline">Jukebox</Link> */}

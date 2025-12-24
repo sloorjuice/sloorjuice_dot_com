@@ -22,14 +22,18 @@ export default function About() {
                 <h1 className="text-3xl font-bold underline">Welcome to all about me!</h1>
                 <div className="text-center gap-3"></div>
                     <p className="mt-2">
-                        I&apos;m 17 years old and in highschool. I&apos;ve been in a long term relationship for almost 2 years now,
+                        I&apos;m 18 years old and currently in High School. I&apos;ve been in a long term relationship for over 2 years now,
                         and I love her almost as much as I love computers! (Kidding)
                     </p>
                     <p className="mt-2">
-                        My Main Hobbie&apos;s Are Programming, Gaming, Listening to music, and Skating, 
-                        but I love trying all kinds of things, so I do a lot. My love for computers is definitely fueled by my love for creation.
-                        My whole life I&apos;ve always felt a need to create something, I found computers are the perfect outlet for that.
-                    </p>		  
+                        My Main Hobbie&apos;s Are Programming, Gaming, Music Creation and Listening, Pixel Art, and Skating, 
+                        but I love trying all kinds of things, so I do a lot. My main passion is just Creation. 
+                        I love to create, build, problem solve, entertain, and I wanna make peoples lives better!
+                        My whole life I&apos;ve always felt a need to create something, I found a lot of good outlets for that.
+                    </p>		
+                    <p className="mt-2">
+                        I wanna create a lot of things with my friends. Short Films, Clothing, General Content, Games, etc.
+                    </p>
                 </div>
 
                 <div className="flex items-start gap-4 max-w-7xl w-full">
@@ -60,6 +64,55 @@ export default function About() {
                     */}
                     
                     <div className="text-center grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="text-center border-2 border-black py-3 px-6">
+                            <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
+                            <div className="flex items-center justify-center gap-8">
+                                {/*Make skills clickable to reveal a modal about how I can utilize this skill and some projects that show it off.*/}
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Python</p>
+                                        <p>Typescript</p>
+                                        <p>Next.js</p>
+                                        <p>Expo</p>
+                                        <p>API&apos;s</p>
+                                        <p>Music Composition</p>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Self-Hosting</p>
+                                        <p>Networking </p> 
+                                        <p>CyberSecurity</p>
+                                        <p>Linux</p>
+                                        <p>Git</p>
+                                        <p>Aseprite</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center border-2 border-black py-3 px-8">
+                            <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
+                            <div className="flex items-center justify-center gap-8">
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Skateboarding</p>
+                                        <p>Gaming</p>
+                                        <p>Movies & TV</p>
+                                        <p>Music</p>
+                                        <p>Writing</p>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="flex flex-col space-y-2">
+                                        <p>Software Development</p>
+                                        <p>Home Labbing</p>
+                                        <p>Game Dev</p>
+                                        <p>Pixel Art</p>
+                                        <p>Photography</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div className="text-center border-2 border-black py-3 px-6">
                             <h1 className="pb-1 text-2xl font-bold underline">Contacts & Socials</h1>
                             <div className="pb-1 flex justify-center gap-6">
@@ -102,49 +155,6 @@ export default function About() {
                             </div>
                         </div>
                         <div className="text-center border-2 border-black py-3 px-6">
-                            <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
-                            <div className="flex items-center justify-center gap-8">
-                                {/*Make skills clickable to reveal a modal about how I can utilize this skill and some projects that show it off.*/}
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Python</p>
-                                        <p>Typescript</p>
-                                        <p>Next.js</p>
-                                        <p>Expo</p>
-                                        <p>API&apos;s</p>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Self-Hosting</p>
-                                        <p>Networking </p> 
-                                        <p>CyberSecurity</p>
-                                        <p>Linux</p>
-                                        <p>Git</p>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-center border-2 border-black py-3 px-8">
-                            <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
-                            <div className="flex items-center justify-center gap-8">
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Skateboarding</p>
-                                        <p>Gaming</p>
-                                        <p>Cartoons</p>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul className="flex flex-col space-y-2">
-                                        <p>Software Development</p>
-                                        <p>Home Labbing</p>
-                                        <p>Photography</p>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-center border-2 border-black py-3 px-6">
                             <h1 className="pb-4 text-2xl font-bold underline">Favorites</h1>
                             <div className="flex items-center justify-center gap-16">
                                 <div>
@@ -154,7 +164,7 @@ export default function About() {
                                     </div>
                                     <p className="font-bold"> TV Show: </p>
                                     <div className="flex flex-col space-y-2">
-                                        <p>Better Caul Saul</p>
+                                        <p>The Boys</p>
                                     </div>
                                 </div>
                                 <div>
