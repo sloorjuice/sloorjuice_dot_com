@@ -53,10 +53,12 @@ export default function About() {
 
                 {/* Main content */}
                 <div className="flex-1 flex flex-col gap-2">
+                    {/*
                     <div className="justify-center">
                         <FeaturedProjectCard project={project}/>
                     </div>
-
+                    */}
+                    
                     <div className="text-center grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="text-center border-2 border-black py-3 px-6">
                             <h1 className="pb-1 text-2xl font-bold underline">Contacts & Socials</h1>
