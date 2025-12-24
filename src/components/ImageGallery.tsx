@@ -34,6 +34,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                 height={300}
                 className="max-w-full max-h-full object-contain"
                 style={{ imageRendering: "pixelated" }}
+                unoptimized
+                quality={100}
               />
             </div>
           ))}
@@ -67,6 +69,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                   minWidth: "400px",
                   minHeight: "400px"
                 }}
+                unoptimized
+                quality={100}
               />
             </div>
             {selectedImage.title && (
