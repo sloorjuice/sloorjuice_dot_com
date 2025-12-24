@@ -4,6 +4,8 @@ set -e
 
 echo "Starting update ... "
 
+git stash save "pre-update-$(date +%s)" || true
+
 git pull origin main
 
 npm install
