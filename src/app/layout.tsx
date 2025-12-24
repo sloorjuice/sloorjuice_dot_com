@@ -22,8 +22,7 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "sloor.dev",
-  description:
-    "Welcome to the Sloorjuice website. Come on in.. Stay a while",
+  description: "Welcome to the Sloorjuice website. Come on in.. Stay a while",
   metadataBase: new URL("https://sloor.dev"),
   alternates: {
     canonical: "https://sloor.dev",
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/CelestedInspriedBackground.png",
+        url: "https://sloor.dev/image.png",
         width: 1200,
         height: 630,
         alt: "sloor.dev - Game & Software Developer",
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "sloor.dev",
     description: "Full Stack and Game Developer Portfolio and Blog",
-    images: ["/CelestedInspriedBackground.png"],
+    images: ["https://sloor.dev/image.png"],
   },
 };
 
