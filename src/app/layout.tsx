@@ -21,7 +21,21 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   title: "sloor.dev",
-  description: "The greatest possible developer.. of all time.",
+  description:
+    "Welcome to the Sloorjuice website. Come on in.. Stay a while",
+  metadataBase: new URL("https://sloor.dev"),
+  openGraph: {
+    title: "sloor.dev",
+    description: "Full Stack and Game Developer Portfolio and Blog",
+    url: "https://sloor.dev",
+    siteName: "sloor.dev",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "sloor.dev",
+    description: "Full Stack and Game Developer Portfolio and Blog",
+  },
 };
 
 export default function RootLayout({
