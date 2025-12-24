@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import { generateSchema } from "./schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,17 +25,40 @@ export const metadata: Metadata = {
   description:
     "Welcome to the Sloorjuice website. Come on in.. Stay a while",
   metadataBase: new URL("https://sloor.dev"),
+  alternates: {
+    canonical: "https://sloor.dev",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "sloor.dev",
     description: "Full Stack and Game Developer Portfolio and Blog",
     url: "https://sloor.dev",
     siteName: "sloor.dev",
     type: "website",
+    images: [
+      {
+        url: "/CelestedInspriedBackground.png",
+        width: 1200,
+        height: 630,
+        alt: "sloor.dev - Game & Software Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "sloor.dev",
     description: "Full Stack and Game Developer Portfolio and Blog",
+    images: ["/CelestedInspriedBackground.png"],
   },
 };
 
@@ -45,6 +69,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateSchema()),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${sourceCodePro.variable} antialiased`}
       >
