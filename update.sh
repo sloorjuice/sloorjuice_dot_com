@@ -4,7 +4,7 @@ set -e
 
 echo "Starting update ... "
 
-#git pull origin main
+git pull origin main
 
 npm install
 
