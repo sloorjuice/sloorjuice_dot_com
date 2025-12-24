@@ -43,7 +43,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       {/* Modal for full-size image */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-gray-800 bg-opacity-90 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedImage(null)}
         >
           <div className="relative w-full h-full flex flex-col items-center justify-center">

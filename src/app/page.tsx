@@ -31,11 +31,15 @@ export default async function Home() {
   const recentPosts = await getRecentPosts();
   
   const pixelArt = [
+    { src: "/borger.png", alt: "Borger", title: "Borger!"},
+    { src: "/cheeborger.png", alt: "CheeBorger", title: "CheeBorger!"},
     { src: "/alien.gif", alt: "Alien Guy", title: "Cool Alien Character" },
     { src: "/me_idle.gif", alt: "Celeste Inspired Sprite", title: "Celeste inspired Character"},
     { src: "/me_run.gif", alt: "Pixel art 3", title: "Celeste inspired Character" },
     { src: "/orb.gif", alt: "Pixel art 3", title: "Cool Glowing Orb" },
     { src: "/yellowguy_walk.gif", alt: "Pixel art 3", title: "Cool lil' Slug Guy" },
+    { src: "/yarn.gif", alt: "Yarn Ball", title: "Yarn Ball!"},
+    { src: "/KittySoul.gif", alt: "Kitty Soul", title: "Kitty Soul (Made for a game I was working on)"},
     { src: "/CelestedInspriedBackground.png", alt: "Pixel art 2", title: "SPOOKY SCARY" },
     // Add more images here
   ];
