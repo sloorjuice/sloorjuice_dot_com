@@ -10,7 +10,7 @@ export default function Header() {
         <Link href="/" className="hover:underline text-lg">Home</Link>
         <Link href="/portfolio" className="hover:underline text-lg">Portfolio</Link>
         <Link href="/about" className="hover:underline text-lg">About</Link>
-        <Link href="/blog" className="hover:underline text-lg">Blog</Link>
+        <a href="https://theroyalscode.com/students/a_reynolds/" target="_blank" rel="noopener noreferrer" className="hover:underline text-lg">Blog</a>
         {/* <Link href="/projects" className="hover:underline">Projects</Link> */}
         {/* <Link href="/jukebox" className="hover:underline">Jukebox</Link> */}
       </nav>
