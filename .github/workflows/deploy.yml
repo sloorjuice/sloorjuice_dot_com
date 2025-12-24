@@ -1,4 +1,4 @@
-name: Deploy to Raspberry pi
+name: Deploy to Raspberry Pi
 
 on:
   push:
@@ -12,8 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Make update.sh executable
-        run: chmod +x ./update.sh
+      - name: Install dependencies
+        run: npm install
 
-      - name: Run update script
-        run: ./update.sh
+      - name: Build
+        run: npm run build
+
+      - name: Restart service
+        run: |
+          sudo systemctl restart sloorjuice_dot_com.service
+          sudo systemctl status sloorjuice_dot_com.service

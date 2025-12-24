@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 User=sloor
-WorkingDirectory=/home/sloor/sloorjuice_dot_com
+WorkingDirectory=/home/sloor/actions-runner/_work/sloorjuice_dot_com/sloorjuice_dot_com
 Environment="PATH=/usr/local/bin:/usr/bin:/bin"
 ExecStart=/usr/bin/npm run start
 Restart=always
