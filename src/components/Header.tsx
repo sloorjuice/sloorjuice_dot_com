@@ -10,7 +10,7 @@ export default function Header() {
       <nav className="mt-1 sm:mt-2 flex gap-2 sm:gap-4">
         <Link href="/" className="hover:underline text-base sm:text-lg">Home</Link>
         <Link href="/about" className="hover:underline text-base sm:text-lg">About</Link>
-        {/* <Link href="/portfolio" className="hover:underline text-lg">Portfolio</Link> */}
+        <Link href="/portfolio" className="hover:underline text-lg">Portfolio</Link>
         <a href="https://sloorjuice.itch.io" target="_blank" rel="noopener noreferrer" className="hover:underline text-base sm:text-lg flex items-center gap-1">
           Games
           <span aria-label="External link" title="External link" className="inline-block align-middle">

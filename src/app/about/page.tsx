@@ -64,7 +64,7 @@ export default function About() {
                     */}
                     
                     <div className="text-center grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="text-center border-2 border-black py-3 px-6">
+                        <div className="text-center border-2 border-black py-3 px-6 bg-purple-200 dark:bg-purple-900">
                             <h1 className="pb-4 text-2xl font-bold underline">Skills</h1>
                             <div className="flex items-center justify-center gap-8">
                                 {/*Make skills clickable to reveal a modal about how I can utilize this skill and some projects that show it off.*/}
@@ -90,7 +90,7 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center border-2 border-black py-3 px-8">
+                        <div className="text-center border-2 border-black py-3 px-8 bg-purple-200 dark:bg-purple-900">
                             <h1 className="pb-4 text-2xl font-bold underline">Hobbies</h1>
                             <div className="flex items-center justify-center gap-8">
                                 <div>
@@ -113,7 +113,7 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center border-2 border-black py-3 px-6">
+                        <div className="text-center border-2 border-black py-3 px-6 bg-purple-200 dark:bg-purple-900">
                             <h1 className="pb-1 text-2xl font-bold underline">Contacts & Socials</h1>
                             <div className="pb-1 flex justify-center gap-6">
                                 <a href="mailto:antant8085@gmail.com">
@@ -154,7 +154,7 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center border-2 border-black py-3 px-6">
+                        <div className="text-center border-2 border-black py-3 px-6 bg-purple-200 dark:bg-purple-900">
                             <h1 className="pb-4 text-2xl font-bold underline">Favorites</h1>
                             <div className="flex items-center justify-center gap-16">
                                 <div>
