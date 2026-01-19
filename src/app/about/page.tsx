@@ -46,13 +46,15 @@ export default function About() {
                         height={250}
                         className="border-2 border-black"
                     />
-                    <Image
-                        src="/photo3.jpeg"
-                        alt="Left side image 2"
-                        width={200}
-                        height={250}
-                        className="border-2 border-black"
-                    />
+                    <div className="border-2 border-black overflow-hidden w-[200px] h-[250px]">
+                        <Image
+                            src="/noglasses.jpeg"
+                            alt="Left side image 2"
+                            width={200}
+                            height={250}
+                            className="scale-125" // Adjust 125 (125%) to your liking
+                        />
+                    </div>
                 </div>
 
                 {/* Main content */}
@@ -185,19 +187,21 @@ export default function About() {
                 {/* Right side photo */}
                 <div className="hidden lg:flex flex-col gap-4 mx-4">
                     <Image
-                        src="/photo7.jpeg"
+                        src="/photo3.jpeg"
                         alt="Left side image 1"
                         width={200}
                         height={250}
                         className="border-2 border-black"
                     />
-                    <Image
-                        src="/photo4.jpeg"
-                        alt="Left side image 2"
-                        width={200}
-                        height={250}
-                        className="border-2 border-black"
-                    />
+                    <div className="border-2 border-black overflow-hidden w-[200px] h-[255px]">
+                        <Image
+                            src="/newglasses.jpeg"
+                            alt="Left side image 2"
+                            width={200}
+                            height={600} // Set this much higher than the container height
+                            className="max-w-none -translate-y-[50px]" 
+                        />
+                    </div>
                 </div>
             </div>
 	  </main>
