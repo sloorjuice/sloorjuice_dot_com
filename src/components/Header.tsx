@@ -6,7 +6,6 @@ export default function Header() {
   return (
     <div className="relative flex flex-col items-center justify-center border-b-2 border-black bg-[#9884af] dark:bg-[#4e2d6c] py-2 sm:py-4">
       <h1 className="text-3xl sm:text-6xl font-bold m-1 sm:m-2 mb-0">sloor.dev</h1>
-      <h2 className="text-sm sm:text-md underline">Everything Sloorjuice.</h2>
       <nav className="mt-1 sm:mt-2 flex gap-2 sm:gap-4">
         <Link href="/" className="hover:underline text-base sm:text-lg">Home</Link>
         <Link href="/about" className="hover:underline text-base sm:text-lg">About</Link>
